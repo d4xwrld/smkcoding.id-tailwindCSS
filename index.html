@@ -21,19 +21,19 @@
   </head>
   <body>
     <main class="container flex my-40 mx-0">
-      <!-- <div
-        class="testimonial absolute bg-orange-100 h-96 justify-center items-center px-48"
-      ></div> -->
-      <div class="px-4 py-4">
-        <h2 class="text-4xl font-semibold mx-10 py-6">
-          What they say about us
-        </h2>
-        <p class="mx-10 w-64">
-          We always provide the best service and always mantain the quality of
-          coffee
-        </p>
+      <div
+        class="testimonial relative bg-orange-100 h-96 justify-center items-center px-96 rounded-xl"
+      ></div>
+      <div class="absolute">
+        <div class="px-4 py-4 mx-20 my-28">
+          <h2 class="text-4xl font-semibold my-2">What they say about us</h2>
+          <p class="w-72 text-md">
+            We always provide the best service and always mantain the quality of
+            coffee
+          </p>
+        </div>
       </div>
-      <div class="flex gap-8">
+      <div class="flex gap-12 absolute ml-144">
         <div class="costumer relative">
           <div class="px-4 py-3">
             <img src="./assets/Images/testimonial-1.png" alt="" class="w-56" />
@@ -75,8 +75,39 @@
             </div>
           </div>
         </div>
+        <div class="bg-[#ff902a] rounded-full"></div>
       </div>
     </main>
-    <section></section>
+    <section>
+      <div class="relative">
+        <div class="my-24 px-48">
+          <img src="./assets/Images/bg-newsletter.png" alt="" width="100%" />
+          <div class="absolute top-36 right-96">
+            <div class="text-4xl tracking-wider text-white font-semibold">
+              Subscribe to get 50% discount price
+            </div>
+            <div
+              class="flex justify-between bg-white w-144 rounded-3xl p-1 mx-auto mt-7"
+            >
+              <div class="font-extralight px-9 py-3">email address</div>
+              <button class="bg-[#2F2105] text-white px-9 py-3 rounded-3xl">
+                Order now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            144: "40rem",
+          },
+        },
+      },
+    };
+  </script>
 </html>
